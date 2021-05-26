@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/table-pagination-material-ui.iml" filepath="$PROJECT_DIR$/.idea/table-pagination-material-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/table-pagination.iml" filepath="$PROJECT_DIR$/.idea/table-pagination.iml" />
     </modules>
   </component>
 </project>
