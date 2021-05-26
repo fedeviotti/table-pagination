@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import { TablePaginationWrapper } from './pagination/table-pagination-wrapper';
 
-function App() {
+const App: React.FC = () => {
+  function onChangePageHanlder(page: number) {
+    console.log(page);
+  }
+
+  function onChangeRowsPerPageHandler(rowsPerPage: number) {
+    console.log(rowsPerPage);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TablePaginationWrapper
+        initialPage={0}
+        initialRowsPerPage={10}
+        count={125}
+        onChangePage={onChangePageHanlder}
+        onChangeRowsPerPage={onChangeRowsPerPageHandler}
+      />
     </div>
   );
-}
+};
 
 export default App;
